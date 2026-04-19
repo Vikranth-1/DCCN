@@ -1,0 +1,5 @@
+netstat -a
+ipconfig
+tracert google.com
+nslookup google.com
+tcpdump -i eth0 icmp
