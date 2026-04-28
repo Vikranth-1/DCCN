@@ -1,0 +1,157 @@
+DCCN LAB – Algorithms
+
+EXP NO: 1  
+Networking Commands  
+
+Algorithm:  
+1. Open Command Prompt or Terminal.  
+2. Type netstat -a to display all active connections and ports.  
+3. Type ipconfig to view IP address and network details.  
+4. Type tracert google.com to trace the path to a website.  
+5. Type nslookup google.com to find the IP address of a domain.  
+6. Use tcpdump or similar tool to capture network packets.  
+7. Observe and analyze the outputs of each command.  
+
+
+EXP NO: 2  
+Client-Server Communication using Socket  
+
+Algorithm (Server):  
+1. Create a ServerSocket with a specific port number.  
+2. Wait for a client request using accept() method.  
+3. Accept the incoming connection from the client.  
+4. Create input and output streams.  
+5. Read the message sent by the client.  
+6. Display the received message on the server.  
+7. Send a response message back to the client.  
+8. Close the socket and server connection.  
+
+Algorithm (Client):  
+1. Create a socket using server IP address and port number.  
+2. Establish connection with the server.  
+3. Create input and output streams.  
+4. Send a message to the server.  
+5. Wait and receive response from server.  
+6. Display the received message.  
+7. Close the connection.  
+
+
+EXP NO: 3  
+HTTP Client using TCP Socket  
+
+Algorithm:  
+1. Create a server socket and wait for client connection.  
+2. Accept the client request.  
+3. Read a file from the server system.  
+4. Convert file data into byte format.  
+5. Send the size of the file to the client.  
+6. Send the actual file data through the socket.  
+7. On the client side, receive file size.  
+8. Read the file data using input stream.  
+9. Display or store the received data.  
+10. Close both client and server connections.  
+
+
+EXP NO: 4  
+Packet Capture using Wireshark  
+
+Algorithm:  
+1. Open the Wireshark application.  
+2. Select the active network interface.  
+3. Start capturing packets.  
+4. Perform network activity such as opening a website.  
+5. Observe packets being captured in real time.  
+6. Stop the capture after some time.  
+7. Apply filters like HTTP or DNS to analyze packets.  
+8. Study packet details such as source and destination.  
+
+
+EXP NO: 5  
+DNS Simulation using UDP  
+
+Algorithm:  
+1. Create a DatagramSocket for the server.  
+2. Wait for a request from the client.  
+3. Receive the domain name sent by the client.  
+4. Check if the domain exists in predefined mapping.  
+5. If found, get the corresponding IP address.  
+6. If not found, assign a default response.  
+7. Send the IP address back to the client.  
+8. Close the socket connection.  
+
+
+EXP NO: 6 (a)  
+ARP  
+
+Algorithm:  
+1. Create a server socket to listen for client requests.  
+2. Wait for a client to send an IP address.  
+3. Receive the IP address from the client.  
+4. Compare it with known IP and MAC mappings.  
+5. Find the corresponding MAC address.  
+6. Send the MAC address back to the client.  
+7. Close the connection.  
+
+
+EXP NO: 6 (b)  
+RARP  
+
+Algorithm:  
+1. Create a DatagramSocket for communication.  
+2. Wait for client request containing MAC address.  
+3. Receive the MAC address from the client.  
+4. Look up the corresponding IP address.  
+5. Prepare the response with IP address.  
+6. Send the IP address to the client.  
+7. Close the socket connection.  
+
+
+EXP NO: 7  
+Sliding Window Protocol  
+
+Algorithm:  
+1. Define total number of frames to be sent.  
+2. Set the window size.  
+3. Send frames within the current window.  
+4. Wait for acknowledgment from receiver.  
+5. If acknowledgment is received, slide the window forward.  
+6. If not received, retransmit frames.  
+7. Repeat until all frames are sent.  
+
+
+EXP NO: 8  
+Subnetting  
+
+Algorithm:  
+1. Take an IP address as input.  
+2. Decide the number of required subnets.  
+3. Calculate the subnet mask.  
+4. Divide the network into smaller subnetworks.  
+5. Calculate number of hosts per subnet.  
+6. Identify network and broadcast address.  
+7. Display subnet details.  
+
+
+EXP NO: 9  
+DHCP Simulation  
+
+Algorithm:  
+1. Create a pool of available IP addresses.  
+2. Wait for a client request.  
+3. Assign an available IP address.  
+4. Remove assigned IP from the pool.  
+5. Send assigned IP to the client.  
+6. Repeat for multiple clients.  
+7. Show message if no IP is available.  
+
+
+EXP NO: 10  
+E-mail System Simulation  
+
+Algorithm:  
+1. Create a list to represent inbox.  
+2. Add messages to the inbox.  
+3. Display all messages.  
+4. Delete a message if required.  
+5. Update the inbox.  
+6. Display final inbox.  
